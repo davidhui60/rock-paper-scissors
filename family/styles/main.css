@@ -24,9 +24,9 @@ body {
 }
 
 .family-mission-text {
-  margin-top: 10%;
+  /* margin-top: 10%; */
   margin-left: 30%;
   margin-right: 30%;
   color: black;
-  /* margin-block-start: 2em; */
+  margin-block-start: 15%;
 }
