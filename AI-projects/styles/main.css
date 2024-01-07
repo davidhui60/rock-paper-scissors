@@ -13,21 +13,28 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-
-
-.container {
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  color: black;
-}
-
-.family-mission-text {
-  margin-top: 10%;
+.mission-text {
   margin-left: 30%;
   margin-right: 30%;
+  /* width: 60%; */
+  /* background-color: rgba(71, 70, 70, 0.7); */
   color: white;
-  /* margin-block-start: 2em; */
+  font-weight: bold;
+  margin-bottom: -20px;
+  margin-block-start: 60px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .mission-text {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mission-text {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
