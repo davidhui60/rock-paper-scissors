@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
-@import url("fontawesome-all.min.css");
+/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600"); */
+/* @import url("fontawesome-all.min.css"); */
 
 
 body {
   margin: 0;
   background-image: url("../images/event1.jpg");
   background-size: cover;
-  font-family: 'Source Sans Pro';
+  font-family: Arial;
   font-weight: 400;
   padding: 0;
   font-size: 13pt;
@@ -14,27 +14,26 @@ body {
 }
 
 
-
-.container {
+/* .container {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
   color: black;
-}
+} */
 
-.mission-text {
-  margin-top: 10%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
+.event-text {
+  margin-left: 30%;
+  margin-right: 30%;
+  /* width: 60%; */
   /* background-color: rgba(71, 70, 70, 0.7); */
   color: black;
   font-weight: bold;
   margin-bottom: -20px;
-  /* margin-block-start: 2em; */
+  margin-block-start: 60px;
 }
+
 
 .warning-text {
   margin-top: 20px;
@@ -46,4 +45,18 @@ body {
   font-weight: bold;
   text-align: center;
   /* margin-block-start: 2em; */
+}
+
+@media screen and (max-width: 800px) {
+  .event-text {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .event-text {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
