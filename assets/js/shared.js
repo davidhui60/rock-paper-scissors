@@ -27,7 +27,7 @@ function get_password(page,userName) {
   let i = 0;
   while (i < pwArray.length) {
     let row = pwArray[i]
-    if ((row[0] === page) && (row[1] === userName)) {
+    if ((row[0] === page) && (row[1].toLowerCase() === userName.toLowerCase())) {
       return row[2]
     }
     i++;
