@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>galleryName</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="shortcut icon" type="x-icon" href="images/Hui.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <!-- <link rel="stylesheet" href="../assets/css/shared.css"> -->
+    <link rel="stylesheet" href="styles/image-grid-text.css">
+    <!-- <script src="scripts/garllary-top.js"></script> -->
+    <script>
+      const fs = require('fs')
+      const files = fs.readdir("images/", callback_function)
+      console.log(files)
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <img
+        class="hui-logo"
+        src="images/Hui.png">
+      </div>
+      <div class="middle-section">
+        <p>galleryName</p>
+      </div>
+      <div class="right-section">
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid">
+        <div class="img-contain">
+          <img src="images/BBQ at Johnny.jpg" alt="family">
+          <p>BBQ at John</p>
+        </div>
+        <div class="img-contain">
+          <img src="images/annapolis_1988_001-1024x683.jpg" alt="family">
+          <p>boat trip</p>
+        </div>
+        <div class="img-contain">
+          <img src="images/brothers Day out 2016.jpg" alt="family" alt="family">
+          <p>brothers Day out 2016</p>
+        </div>
+        <div class="img-contain">
+          <img src="images/China_trip_2010.jpg" alt="family" alt="family"> 
+          <p>China trip 2010</p>
+        </div>
+        <div class="img-contain">
+          <img src="images/mom 96 bday.jpeg" alt="family">
+          <p>grandmom 96 bday</p>
+        </div>
+        <div class="img-contain">
+          <img src="images/johnny 50th 4.jpg"  alt="family">
+          <p>john 50th</p>
+        </div>
+    </div>
+        
+    
+    
+  </body>
+</html>
