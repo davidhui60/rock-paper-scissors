@@ -7,10 +7,15 @@
     <link rel="shortcut icon" type="x-icon" href="images/Hui.png">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="../assets/css/shared.css">
+    <!-- <link rel="stylesheet" href="../assets/css/shared.css"> -->
     <link rel="stylesheet" href="styles/image-grid-text.css">
+    <script src="../assets/js/shared.js"></script>
+    <script>
+      check_password('family','../index.html');
+    </script>
   </head>
   <body>
+    <!-- Header section -->
     <div class="header">
       <div class="left-section">
         <img
@@ -21,7 +26,17 @@
         <p>Hui Family Website</p>
       </div>
       <div class="right-section">
-        <p><time datetime="YYYY-MM-DDThh:mm:ssTZD"></p>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Galleries</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="galleries/david-top.html">David & Ellen</a>
+            <a href="#">Joseph & Joyce</a>
+            <a href="#">Leo & Pat</a>
+            <a href="#">Tom & Sue</a>
+            <a href="#">Anthony & Minx</a>
+            <a href="#">John & Kathy</a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -37,6 +52,8 @@
         ⏰ : 5:00 PM<br>
         📍 : <a href="https://www.google.com/maps/place/1012b+Winter+St,+Philadelphia,+PA+19107/@39.9566123,-75.158714,17z/data=!3m1!4b1!4m6!3m5!1s0x89c6c62aec8d5e39:0x3f6295375f9a5f1d!8m2!3d39.9566082!4d-75.1561391!16s%2Fg%2F11sqpv1pbs?authuser=0&entry=ttu">1012 B, Winter Street, Phila. PA</p>
     </div>
+
+    <!-- image grid -->
     <div class="grid-container">
       <div class="grid">
         <div class="img-contain">
