@@ -105,10 +105,11 @@
   }
 
 }
+*/
 
 @media screen and (max-width: 600px) {
-  .middle-section p {
-    color: red;
+  .dropdown-content {
+    right: 10px;;
   }
   
-} */
+}
