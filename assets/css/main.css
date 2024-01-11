@@ -598,9 +598,9 @@ input, select, textarea {
 							font-size: 1em;
 						}
 
-					#main .item.thumb h2 {
+					/* #main .item.thumb h2 {
 						display: none;
-					}
+					} */
 
 		}
 
@@ -817,10 +817,10 @@ input, select, textarea {
 				-ms-box-sizing: content-box;
 				box-sizing: content-box;
 			}
-
-				.poptrox-popup .caption {
+				/* pop up label */
+				/* .poptrox-popup .caption {
 					display: none !important;
-				}
+				} */
 
 				.poptrox-popup .nav-next {
 					display: none !important;
