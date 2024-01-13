@@ -1,7 +1,7 @@
 function check_password (page,failLocation='../index.html') {
   const userName = String(prompt(page + " page\nEnter in the username ",""));
   const password = get_password(page,userName);
-  const x = String(prompt("Enter in the password ",""));
+  const x = String(prompt("Enter in the password ","")).trim();
   if (x !== password) {
     alert("Wrong password or username " + userName + " " + x)
     window.location = failLocation;
@@ -15,9 +15,9 @@ passwords += "family,ellen,wong#1628Plac,Ellen Hui\n"
 passwords += "family,PlaHui68@,HuiPla68#,Minx Hui\n"
 passwords += "family,PlaHui68@,HuiPla68#,Anthony Hui\n"
 passwords += "family,hui,password,temp password\n"
-passwords += "trade,david,kph#0417Plac,David Hui\n"
-passwords += "trade,stevet,Steve@111,Steve Toto\n"
-passwords += "trade,greg,Greg@111,Greg\n"
+passwords += "trading,david,kph#0417Plac,David Hui\n"
+passwords += "trading,stevet,Steve@111,Steve Toto\n"
+passwords += "trading,greg,Greg@111,Greg\n"
 
 function split_csv(csv) {
   const rows = csv.split('\n')
