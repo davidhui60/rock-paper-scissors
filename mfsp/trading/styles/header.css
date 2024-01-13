@@ -1,5 +1,6 @@
 .header {
   height: 50px;
+  font-family: Arial;
 
   display: flex;
   flex-direction: row;
@@ -18,7 +19,7 @@
 }
 
 .left-section {
-  width: 30%;
+  width: 20%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -27,9 +28,7 @@
 
 .middle-section {
   flex: 1;
-  /* margin-left: 20px;
-  margin-right: 20px; */
-  width: 40%;
+  width: 60%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -44,41 +43,10 @@
 }
 
 .right-section {
-  width: 30%;
-  /* margin-right: 20px; */
+  width: 20%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* justify-content: space-between; */
   flex-shrink: 0;
 }
-
-#trading-button {
-  font-size: 0.8em;
-  font-family: Arial;
-  border: none;
-  margin-right: 5px;
-}
-
-#c-schwab-button {
-  font-size: .7em;
-  font-family: Arial;
-  border: none;
-}
-
-.buttons {
-  height: 1.5rem;
-  width: 3.5rem;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.buttons:hover {
-  background-color: black;
-}
-
-.buttons:hover>a {
-  color: white;
-}
-
 

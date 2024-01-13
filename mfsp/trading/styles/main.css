@@ -1,0 +1,25 @@
+/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
+@import url("fontawesome-all.min.css"); */
+
+body {
+  background-color: lightgray;
+  font-family: Arial;
+}
+
+#trading-instruction-text {
+  color: black;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  margin-block-start: 60px;
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 600px) {
+  
+}
+
