@@ -1,13 +1,3 @@
-function check_password (page,failLocation='../index.html') {
-  const userName = String(prompt(page + " page\nEnter in the username ",""));
-  const password = get_password(page,userName);
-  const x = String(prompt("Enter in the password ","")).trim();
-  if (x !== password) {
-    alert("Wrong username or password: " + userName + " " + x)
-    window.location = failLocation;
-  }
-}
-
 //page,userName,password,who
 let passwords = ""
 passwords += "family,david,kph#0417Plac,David Hui\n"
@@ -18,11 +8,16 @@ passwords += "family,hui,password,temp password\n"
 passwords += "trading,david,kph#0417Plac,David Hui\n"
 passwords += "trading,stevet,Steve@111,Steve Toto\n"
 passwords += "trading,greg,Greg@111,Greg\n"
+//add password
+
+//gallery,user,code
+let accesscodes = ""
+//add accesscode
 
 function split_csv(csv) {
   const rows = csv.split('\n')
-  const pwArray = rows.map(row => row.split(','));
-  return pwArray
+  const array = rows.map(row => row.split(','));
+  return array
 }
 
 function get_password(page,userName) {
@@ -38,21 +33,28 @@ function get_password(page,userName) {
   return false
 }
 
-//gallery,user,code
-let accesscode = ""
-// accesscode += "alaska 2023,david,123456\n"
+function check_password (page,failLocation='../index.html') {
+  const userName = String(prompt(page + " page\nEnter in the username ",""));
+  const password = get_password(page,userName);
+  const x = String(prompt("Enter in the password ","")).trim();
+  if (x !== password) {
+    alert("Wrong username or password: " + userName + " " + x)
+    window.location = failLocation;
+  }
+}
 
 function get_accesscode(gallery,userName) {
-  accArray = split_csv(accesscode)
+  const accArray = split_csv(accesscodes)
   let i = 0;
+  let accesscode = false
   while (i < accArray.length) {
     let row = accArray[i]
     if ((row[0] === gallery) && (row[1].toLowerCase() === userName.toLowerCase())) {
-      return row[2]
+      accesscode = row[2]
     }
     i++
   }
-  return false
+  return accesscode
 }
 
 function check_accesscode (gallery,userName,failLocation='../../index.html') {
