@@ -37,3 +37,32 @@ function get_password(page,userName) {
   }
   return false
 }
+
+//gallery,user,code
+let accesscode = ""
+// accesscode += "alaska 2023,david,123456\n"
+
+function get_accesscode(gallery,userName) {
+  accArray = split_csv(accesscode)
+  let i = 0;
+  while (i < accArray.length) {
+    let row = accArray[i]
+    if ((row[0] === gallery) && (row[1].toLowerCase() === userName.toLowerCase())) {
+      return row[2]
+    }
+    i++
+  }
+  return false
+}
+
+function check_accesscode (gallery,userName,failLocation='../../index.html') {
+  const accesscode = get_accesscode(gallery,userName);
+  if (accesscode === false) {
+    return
+  }
+  const x = String(prompt("Enter in the accesscode ","")).trim();
+  if ( x !== accesscode) {
+    alert("Wrong accesscode" + " " + x)
+    window.location = failLocation;
+  }
+}
