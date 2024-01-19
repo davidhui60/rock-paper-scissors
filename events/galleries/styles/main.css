@@ -1,0 +1,56 @@
+/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600"); */
+/* @import url("fontawesome-all.min.css"); */
+
+body {
+  margin: 0;
+  background-color: beige;
+
+  font-family: sans-serif;
+  font-weight: 400;
+  padding: 0;
+  font-size: 13pt;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#note-text {
+  margin-left: 20%;
+  margin-right: 20%;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  padding: 3px;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  margin-block-start: 80px;
+}
+
+#top-text {
+  margin: auto;
+  text-align: center;
+  margin-block-start: 60px;
+}
+
+#top-text P {
+  display: inline-block;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+
+@media screen and (max-width: 800px) {
+  .family-mission-text,
+  .event-text {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .family-mission-text,
+  .event-text {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
