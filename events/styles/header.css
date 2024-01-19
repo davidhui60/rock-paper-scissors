@@ -52,3 +52,11 @@
   /* justify-content: space-between; */
   flex-shrink: 0;
 }
+
+#gallery-button {
+  border: none;
+  background-color: beige;
+  color: black;
+  font-weight: bold;
+  border-radius: 20px;
+}
