@@ -10,7 +10,7 @@
 
 .grid {
 	--gap: 16px;
-	--num-cols: 4;
+	--num-cols: 6;
 	--row-height: 200px;
 
 	box-sizing: border-box;
@@ -22,6 +22,7 @@
 	gap: var(--gap);
   /* background-color: gray; */
 }
+
 
 .img-contain img{
   border: 1px solid #ccc;
@@ -40,9 +41,9 @@
 }
 
 @media screen and (max-width: 800px) {
-  .grid {
+  /* .grid {
     --num-cols: 2;
-  }
+  } */
   .grid-container {
     width: 70%;
   }
@@ -53,7 +54,7 @@
 
 @media screen and (max-width: 600px) {
   .grid {
-    --num-cols: 1;
+    --num-cols: 4;
   }
   .grid-container {
     width: 80%;
