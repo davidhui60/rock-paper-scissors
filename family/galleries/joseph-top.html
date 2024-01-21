@@ -2,35 +2,28 @@
 <html>
   <head>
     <title>Joseph and Joyce galleries</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="shortcut icon" type="x-icon" href="images/Hui.png">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <!-- <link rel="stylesheet" href="../assets/css/shared.css"> -->
-    <link rel="stylesheet" href="styles/image-grid-text.css">
+    <link rel="shortcut icon" type="x-icon" href="../images/Hui.png">
+    <link rel="stylesheet" href="../../assets/css/gallery.css">
+    <script src="../../assets/js/shared.js"></script>
+    <script>
+      check_accesscode('Joseph and Joyce galleries','userName');
+    </script>
   </head>
   <body>
-    <div class="header">
-      <div class="left-section">
-        <img
-        class="hui-logo"
-        src="images/Hui.png">
-      </div>
-      <div class="middle-section">
-        <p>Joseph and Joyce galleries</p>
-      </div>
-      <div class="right-section">
-      </div>
-    </div>
+    <header>
+      <div id="left"><img class="hui-logo" src="../images/Hui.png"></div>
+      <div id="middle">Joseph and Joyce galleries</div>
+      <div id="right"></div>
+    </header>
 
     <div id="top-text">
       <p>Joseph and Joyce galleries:<br><span style="font-weight:900;color:blue;">Click</span> on photo to enter a gallery.<br>Enjoy!</p>
     </div>
 
-    <div class="grid-container">
-      <div class="grid">
-      </div>
+    <div id="grid-top-container">
     </div>
   </body>
 </html>
