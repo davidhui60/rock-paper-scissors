@@ -125,7 +125,7 @@ header #right {
 @media (min-width: 1025px) and (max-width: 1280px){
   * {
     --topColumns: 7;
-    --mainColumns: 4;
+    --mainColumns: 3;
   }
 }
 
@@ -133,6 +133,6 @@ header #right {
 @media (min-width: 1281px) {
   * {
     --topColumns: 8;
-    --mainColumns: 5;
+    --mainColumns: 4;
   }
 }
