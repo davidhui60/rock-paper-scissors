@@ -5,26 +5,62 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trading</title>
-  <link rel="stylesheet" href="styles/header.css">
-  <link rel="stylesheet" href="styles/main.css">
+  <!-- <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/main.css"> -->
+  <link rel="stylesheet" href="../../assets/css/gallery.css">
   <script src="../../assets/js/shared.js"></script>
   <script>
-    check_password('trading','../index.html');
+    /*check_password('trading','../index.html');*/
   </script>
+  <style>
+    .logo {height: 30px}
+    body {background-color: rgb(221, 214, 214);}
+    header {background-color: lightblue;}
+    .grid, .past-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 2fr 2fr;
+      grid-template-rows: minmax(10px, auto);
+      gap: 1px;
+      width: 960;
+      margin: auto;
+      background-color: black;
+      border: 2px solid black;
+      margin-bottom: 10px;
+    }
+    .grid p, .past-grid p {
+      background-color: lightblue;
+      font-size: 15px;
+      padding: 0px;
+      margin: 0px;
+    }
+    .past-grid p {
+      background-color: lightgray;
+    }
+
+  </style>
 </head>
 <body>
   <!-- Header section -->
-  <div class="header">
-    <div class="left-section">
+  <header>
+    <div id="left">
+      <img class="logo" src="../images/MFSP logo.png">
     </div>
-    <div class="middle-section">
-      <p>Trading</p>
-    </div>
-    <div class="right-section">
-    </div>
+    <div id="middle">Trading</div>
+    <div id="right"></div>
+  </header>
+  <h2 id="trading-instruction-text">Daily Trading Instructions</h2>
+
+  <div class="grid">
+    <p>2024-01-01</p><p>Monday</p><p></p><p></p><p></p>
+    <p>AAPL</p><p>BUY</p><p>30.0 shares</p><p>buy-limit $500.00</p><p>set trailing stop at 15%</p>
+    <p>COST</p><p>BUY</p><p>10.0 shares</p><p>buy-limit $1000.00</p><p>set trailing stop at 15%</p>
   </div>
 
-  <p id="trading-instruction-text">Daily Trading Instructions</p>
+  <div class="past-grid">
+    <p>2024-07-08</p><p>Tuesday</p><p></p><p></p><p></p>
+    <p>AAPL</p><p>BUY</p><p>30.0 shares</p><p>buy-limit $500.00</p><p>set trailing stop at 15%</p>
+    <p>COST</p><p>BUY</p><p>10.0 shares</p><p>buy-limit $1000.00</p><p>set trailing stop at 15%</p>
+  </div>
 
   
 </body>
