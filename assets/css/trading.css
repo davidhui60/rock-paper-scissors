@@ -1,0 +1,73 @@
+/* default just in case */
+* {
+  --topColumns: 8;
+  --mainColumns: 4;
+}
+
+body {
+  color: black;
+  font-family: Arial;
+  text-align: center;
+  background-color: rgb(221, 214, 214);
+}
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 50px;
+  background-color: lightblue;
+  color: black;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+header #left {
+  text-align: left;
+  padding-left: 5px;
+}
+
+.logo {
+  width: 40px;
+  padding-left: 20px;
+}
+
+header #middle {
+  text-align: center;
+  font-weight: bold;
+}
+
+header #right {
+  text-align: left;
+  padding-left: 5px;
+}
+
+.grid, .past-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr 2fr;
+  grid-template-rows: minmax(10px, auto);
+  gap: 1px;
+  width: 960;
+  margin: auto;
+  background-color: black;
+  border: 2px solid black;
+  margin-bottom: 10px;
+}
+.blank-3-last {
+  grid-column: 3 / -1;
+}
+.blank-4-last {
+  grid-column: 4 / -1;
+}
+.grid p, .past-grid p {
+  font-size: 15px;
+  padding: 2px;
+  margin: 0px;
+}
+
+.grid p {
+  background-color: rgb(196, 239, 253);
+}
+.past-grid p {
+  background-color: rgb(158, 157, 157);
+}
+
+
