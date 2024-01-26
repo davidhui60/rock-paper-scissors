@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="../../assets/css/trading.css">
   <script src="../../assets/js/shared.js"></script>
   <script>
-    check_password('trading','../index.html');
-    function myFunction(myType,myCheck) {
+    //check_password('trading','../index.html');
+    function filter_action(myType,myCheck) {
       let checkBox = document.getElementById(myCheck);
       let myClasses = document.querySelectorAll(myType),
         i = 0,
@@ -29,18 +29,23 @@
 <body>
   <!-- Header section -->
   <header>
-    <div id="left">
+    <div id="hd-left">
       <img class="logo" src="../images/MFSP logo.png">
     </div>
-    <div id="middle">Trading</div>
-    <div id="right">
-      <div id="filter-btns">
-        <label for="checkNa">No Action:</label> 
-        <input type="checkbox" id="checkNa" onclick="myFunction('.no-action','checkNa')" checked="checked">
-        <label class="junk" for="checkBuy">BUY:</label> 
-        <input type="checkbox" id="checkBuy" onclick="myFunction('.buy','checkBuy')" checked="checked">
-        <label for="checkSell">SELL:</label> 
-        <input type="checkbox" id="checkSell" onclick="myFunction('.sell','checkSell')" checked="checked">
+    <div id="hd-middle">Trading</div>
+    <div id="hd-right">
+      <div class="btn-container">
+        <p>Filters</p>
+        <input type="checkbox" id="cbnt-na" onclick="filter_action('.no-action','cbnt-na')" checked="checked">
+        <label for="cbnt-na">No action</label>
+      </div>
+      <div class="btn-container">
+        <input type="checkbox" id="cbnt-buy" onclick=" filter_action('.buy','cbnt-buy')" checked="checked">
+        <label for="cbnt-buy">BUY</label>
+      </div>
+      <div class="btn-container">
+        <input type="checkbox" id="cbnt-sell" onclick=" filter_action('.sell','cbnt-sell')" checked="checked">
+        <label for="cbnt-sell">SELL</label>
       </div>
     </div>
   </header>
