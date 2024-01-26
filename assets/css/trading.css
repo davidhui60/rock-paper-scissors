@@ -76,7 +76,8 @@ header {
   font-weight: bold;
 }
 .past-grid p {
-  background-color: rgb(158, 157, 157);
+  background-color: rgb(204, 202, 202);
+  color: rgb(49, 49, 49);
 }
 
 
