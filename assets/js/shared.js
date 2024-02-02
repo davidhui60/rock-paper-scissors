@@ -36,7 +36,7 @@ function get_password(page,userName) {
 function check_password (page,failLocation='../index.html') {
   const userName = String(prompt(page + " page\nEnter in the username ",""));
   const password = get_password(page,userName);
-  const x = String(prompt("Enter in the password ","")).trim();
+  const x = String(prompt("Enter in the password ","",{autocapitalization:"off"})).trim();
   if (x !== password) {
     alert("Wrong username or password: " + userName + " " + x)
     window.location = failLocation;
