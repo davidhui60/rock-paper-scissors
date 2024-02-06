@@ -39,7 +39,7 @@ header {
 .btn-container input {
   cursor: pointer;
 }
-#no-action, #buy, #sell {
+#no-action, #buy, #sell, #cancel{
   text-align: center;
 }
 
