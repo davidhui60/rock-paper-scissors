@@ -51,12 +51,32 @@
         <input type="checkbox" id="cbnt-cancel" onclick=" filter_action('.cancel','cbnt-cancel')" checked="checked">
         <label for="cbnt-cancel">Cancel Order</label>
       </div>
+      <div class="btn-container">
+        <input type="checkbox" id="cbnt-bought" onclick=" filter_action('.bought','cbnt-bought')" checked="checked">
+        <label for="cbnt-bought">BOUGHT</label>
+      </div>
+      <div class="btn-container">
+        <input type="checkbox" id="cbnt-sold" onclick=" filter_action('.sold','cbnt-sold')" checked="checked">
+        <label for="cbnt-sold">SOLD</label>
+      </div>
     </div>
   </header>
   <h2 id="trading-instruction-text">Daily Trading Instructions</h2>
 
   <div class="no-action">
     <div class="grid-container">
+      <p>2024-02-08</p><p>Thurseday</p><p class="blank-3-last"></p>
+      <p></p><p class="no-action">No Action</p><p class="blank-3-last"></p>
+    </div>
+  </div>
+  <div class="no-action">
+    <div class="past-grid">
+      <p>2024-02-07</p><p>Wednesday</p><p class="blank-3-last"></p>
+      <p></p><p class="no-action">No Action</p><p class="blank-3-last"></p>
+    </div>
+  </div>
+  <div class="no-action">
+    <div class="past-grid">
       <p>2024-02-06</p><p>Tuesday</p><p class="blank-3-last"></p>
       <p></p><p class="no-action">No Action</p><p class="blank-3-last"></p>
     </div>
@@ -79,23 +99,42 @@
       <p></p><p class="no-action">No Action</p><p class="blank-3-last"></p>
     </div>
   </div>
+  <div class="bought">
+    <div class="past-grid">
+      <p>2024-02-02</p><p>Friday</p><p class="blank-3-last"></p>
+      <p>LLY</p><p>BOUGHT</p><p>1.0 shares</p><p>Price: $662.38</p><p></p>
+    </div>
+  </div>
   <div class="buy">
     <div class="past-grid">
       <p>2024-02-02</p><p>Friday</p><p class="blank-3-last"></p>
-      <p>LLY</p><p>BUY</p><p>1.0 shares</p><p>buy-limit $660.43</p><p>set trailing stop at 15%</p>
+      <p>LLY</p><p>BUY</p><p>2.0 shares</p><p>buy-limit NONE</p><p>set trailing stop at 9%</p>
+    </div>
+  </div>
+  <div class="sold">
+    <div class="past-grid">
+      <p>2024-02-01</p><p>Thurseday</p><p class="blank-3-last"></p>
+      <p>CAH</p><p>SOLD</p><p>-215.0 shares</p><p>Price: $104.00</p><p></p>
+      <p>FTI</p><p>SOLD</p><p>-266.0 shares</p><p>Price: $19.44</p><p></p>
     </div>
   </div>
   <div class="sell">
     <div class="past-grid">
       <p>2024-02-01</p><p>Thurseday</p><p class="blank-3-last"></p>
-      <p>CAH</p><p>SELL</p><p>131.0 shares</p><p class="blank-4-last"></p>
-      <p>FTI</p><p>SELL</p><p>164.0 shares</p><p class="blank-4-last"></p>
+      <p>CAH</p><p>SELL</p><p>215.0 shares</p><p class="blank-4-last"></p>
+      <p>FTI</p><p>SELL</p><p>266.0 shares</p><p class="blank-4-last"></p>
+    </div>
+  </div>
+  <div class="bought">
+    <div class="past-grid">
+      <p>2024-02-01</p><p>Thurseday</p><p class="blank-3-last"></p>
+      <p>LLY</p><p>BOUGHT</p><p>44.0 shares</p><p>Price: $647.33</p><p></p>
     </div>
   </div>
   <div class="buy">
     <div class="past-grid">
       <p>2024-02-01</p><p>Thurseday</p><p class="blank-3-last"></p>
-      <p>LLY</p><p>BUY</p><p>27.0 shares</p><p>buy-limit $645.61</p><p>set trailing stop at 15%</p>
+      <p>LLY</p><p>BUY</p><p>44.0 shares</p><p>buy-limit NONE</p><p>set trailing stop at 9%</p>
     </div>
   </div>
   <div class="no-action">
@@ -104,10 +143,10 @@
       <p></p><p class="no-action">No Action</p><p class="blank-3-last"></p>
     </div>
   </div>
-  <div class="buy">
+  <div class="no-action">
     <div class="past-grid">
       <p>2024-01-30</p><p>Tuesday</p><p class="blank-3-last"></p>
-      <p>FTI</p><p>BUY</p><p>1.0 shares</p><p>buy-limit $20.40</p><p>set trailing stop at 15%</p>
+      <p></p><p class="no-action">No Action</p><p class="blank-3-last"></p>
     </div>
   </div>
   <div class="no-action">
@@ -134,16 +173,16 @@
       <p></p><p class="no-action">No Action</p><p class="blank-3-last"></p>
     </div>
   </div>
-  <div class="buy">
+  <div class="no-action">
     <div class="past-grid">
       <p>2024-01-25</p><p>Thurseday</p><p class="blank-3-last"></p>
-      <p>FTI</p><p>BUY</p><p>1.0 shares</p><p>buy-limit $19.75</p><p>set trailing stop at 15%</p>
+      <p></p><p class="no-action">No Action</p><p class="blank-3-last"></p>
     </div>
   </div>
-  <div class="buy">
+  <div class="no-action">
     <div class="past-grid">
       <p>2024-01-24</p><p>Wednesday</p><p class="blank-3-last"></p>
-      <p>FTI</p><p>BUY</p><p>1.0 shares</p><p>buy-limit $19.55</p><p>set trailing stop at 15%</p>
+      <p></p><p class="no-action">No Action</p><p class="blank-3-last"></p>
     </div>
   </div>
   <div class="no-action">
@@ -266,22 +305,40 @@
       <p></p><p class="no-action">No Action</p><p class="blank-3-last"></p>
     </div>
   </div>
+  <div class="bought">
+    <div class="past-grid">
+      <p>2024-01-03</p><p>Wednesday</p><p class="blank-3-last"></p>
+      <p>FTI</p><p>BOUGHT</p><p>2.0 shares</p><p>Price: $20.05</p><p></p>
+    </div>
+  </div>
   <div class="buy">
     <div class="past-grid">
       <p>2024-01-03</p><p>Wednesday</p><p class="blank-3-last"></p>
-      <p>FTI</p><p>BUY</p><p>1.0 shares</p><p>buy-limit $20.05</p><p>set trailing stop at 15%</p>
+      <p>FTI</p><p>BUY</p><p>2.0 shares</p><p>buy-limit NONE</p><p>set trailing stop at 9%</p>
+    </div>
+  </div>
+  <div class="sold">
+    <div class="past-grid">
+      <p>2024-01-02</p><p>Tuesday</p><p class="blank-3-last"></p>
+      <p>FTI</p><p>SOLD</p><p>-260.0 shares</p><p>Price: $20.34</p><p></p>
     </div>
   </div>
   <div class="sell">
     <div class="past-grid">
       <p>2024-01-02</p><p>Tuesday</p><p class="blank-3-last"></p>
-      <p>FTI</p><p>SELL</p><p>157.0 shares</p><p class="blank-4-last"></p>
+      <p>FTI</p><p>SELL</p><p>260.0 shares</p><p class="blank-4-last"></p>
+    </div>
+  </div>
+  <div class="bought">
+    <div class="past-grid">
+      <p>2024-01-02</p><p>Tuesday</p><p class="blank-3-last"></p>
+      <p>CAH</p><p>BOUGHT</p><p>54.0 shares</p><p>Price: $100.68</p><p></p>
     </div>
   </div>
   <div class="buy">
     <div class="past-grid">
       <p>2024-01-02</p><p>Tuesday</p><p class="blank-3-last"></p>
-      <p>CAH</p><p>BUY</p><p>32.0 shares</p><p>buy-limit $100.80</p><p>set trailing stop at 15%</p>
+      <p>CAH</p><p>BUY</p><p>54.0 shares</p><p>buy-limit NONE</p><p>set trailing stop at 9%</p>
     </div>
   </div>
   <div class="no-action">
@@ -398,10 +455,16 @@
       <p></p><p class="no-action">No Action</p><p class="blank-3-last"></p>
     </div>
   </div>
-  <div class="no-action">
+  <div class="bought">
     <div class="past-grid">
       <p>2023-12-13</p><p>Wednesday</p><p class="blank-3-last"></p>
-      <p></p><p class="no-action">No Action</p><p class="blank-3-last"></p>
+      <p>FTI</p><p>BOUGHT</p><p>2.0 shares</p><p>Price: $18.78</p><p></p>
+    </div>
+  </div>
+  <div class="buy">
+    <div class="past-grid">
+      <p>2023-12-13</p><p>Wednesday</p><p class="blank-3-last"></p>
+      <p>FTI</p><p>BUY</p><p>2.0 shares</p><p>buy-limit NONE</p><p>set trailing stop at 9%</p>
     </div>
   </div>
   <div class="no-action">
@@ -410,10 +473,16 @@
       <p></p><p class="no-action">No Action</p><p class="blank-3-last"></p>
     </div>
   </div>
-  <div class="no-action">
+  <div class="bought">
     <div class="past-grid">
       <p>2023-12-11</p><p>Monday</p><p class="blank-3-last"></p>
-      <p></p><p class="no-action">No Action</p><p class="blank-3-last"></p>
+      <p>FTI</p><p>BOUGHT</p><p>522.0 shares</p><p>Price: $18.83</p><p></p>
+    </div>
+  </div>
+  <div class="buy">
+    <div class="past-grid">
+      <p>2023-12-11</p><p>Monday</p><p class="blank-3-last"></p>
+      <p>FTI</p><p>BUY</p><p>522.0 shares</p><p>buy-limit NONE</p><p>set trailing stop at 9%</p>
     </div>
   </div>
   <div class="no-action">
@@ -434,10 +503,10 @@
       <p></p><p class="no-action">No Action</p><p class="blank-3-last"></p>
     </div>
   </div>
-  <div class="no-action">
+  <div class="sold">
     <div class="past-grid">
       <p>2023-12-07</p><p>Thurseday</p><p class="blank-3-last"></p>
-      <p></p><p class="no-action">No Action</p><p class="blank-3-last"></p>
+      <p>FTI</p><p>SOLD (stop loass)</p><p>-526.0 shares</p><p>$18.76</p><p></p>
     </div>
   </div>
   <div class="no-action">
@@ -452,10 +521,16 @@
       <p></p><p class="no-action">No Action</p><p class="blank-3-last"></p>
     </div>
   </div>
+  <div class="bought">
+    <div class="past-grid">
+      <p>2023-12-04</p><p>Monday</p><p class="blank-3-last"></p>
+      <p>FTI</p><p>BOUGHT</p><p>4.0 shares</p><p>Price: $20.41</p><p></p>
+    </div>
+  </div>
   <div class="buy">
     <div class="past-grid">
       <p>2023-12-04</p><p>Monday</p><p class="blank-3-last"></p>
-      <p>CAH</p><p>BUY</p><p>1.0 shares</p><p>buy-limit $107.16</p><p>set trailing stop at 15%</p>
+      <p>FTI</p><p>BUY</p><p>4.0 shares</p><p>buy-limit NONE</p><p>set trailing stop at 9%</p>
     </div>
   </div>
   <div class="no-action">
@@ -470,17 +545,30 @@
       <p></p><p class="no-action">No Action</p><p class="blank-3-last"></p>
     </div>
   </div>
+  <div class="sold">
+    <div class="past-grid">
+      <p>2023-12-01</p><p>Friday</p><p class="blank-3-last"></p>
+      <p>MCK</p><p>SOLD</p><p>-120.0 shares</p><p>Price: $472.46</p><p></p>
+    </div>
+  </div>
   <div class="sell">
     <div class="past-grid">
       <p>2023-12-01</p><p>Friday</p><p class="blank-3-last"></p>
-      <p>FTI</p><p>SELL</p><p>405.0 shares</p><p class="blank-4-last"></p>
-      <p>MCK</p><p>SELL</p><p>72.0 shares</p><p class="blank-4-last"></p>
+      <p>MCK</p><p>SELL</p><p>120.0 shares</p><p class="blank-4-last"></p>
+    </div>
+  </div>
+  <div class="bought">
+    <div class="past-grid">
+      <p>2023-12-01</p><p>Friday</p><p class="blank-3-last"></p>
+      <p>CAH</p><p>BOUGHT</p><p>653.0 shares</p><p>Price: $107.01</p><p></p>
+      <p>FTI</p><p>BOUGHT</p><p>522.0 shares</p><p>Price: $20.54</p><p></p>
     </div>
   </div>
   <div class="buy">
     <div class="past-grid">
       <p>2023-12-01</p><p>Friday</p><p class="blank-3-last"></p>
-      <p>CAH</p><p>BUY</p><p>396.0 shares</p><p>buy-limit $107.08</p><p>set trailing stop at 15%</p>
+      <p>CAH</p><p>BUY</p><p>653.0 shares</p><p>buy-limit NONE</p><p>set trailing stop at 9%</p>
+      <p>FTI</p><p>BUY</p><p>522.0 shares</p><p>buy-limit NONE</p><p>set trailing stop at 9%</p>
     </div>
   </div>
   <div class="no-action">
@@ -567,10 +655,10 @@
       <p></p><p class="no-action">No Action</p><p class="blank-3-last"></p>
     </div>
   </div>
-  <div class="no-action">
+  <div class="sold">
     <div class="past-grid">
       <p>2023-11-16</p><p>Thurseday</p><p class="blank-3-last"></p>
-      <p></p><p class="no-action">No Action</p><p class="blank-3-last"></p>
+      <p>FTI</p><p>SOLD (stop loass)</p><p>-1175.0 shares</p><p>$20.48</p><p></p>
     </div>
   </div>
   <div class="no-action">
@@ -606,18 +694,6 @@
   <div class="no-action">
     <div class="past-grid">
       <p>2023-11-10</p><p>Friday</p><p class="blank-3-last"></p>
-      <p></p><p class="no-action">No Action</p><p class="blank-3-last"></p>
-    </div>
-  </div>
-  <div class="no-action">
-    <div class="past-grid">
-      <p>2023-11-09</p><p>Thurseday</p><p class="blank-3-last"></p>
-      <p></p><p class="no-action">No Action</p><p class="blank-3-last"></p>
-    </div>
-  </div>
-  <div class="no-action">
-    <div class="past-grid">
-      <p>2023-11-08</p><p>Wednesday</p><p class="blank-3-last"></p>
       <p></p><p class="no-action">No Action</p><p class="blank-3-last"></p>
     </div>
   </div>
