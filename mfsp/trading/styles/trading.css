@@ -1,0 +1,140 @@
+/* default just in case */
+* {
+  --topColumns: 8;
+  --mainColumns: 4;
+}
+
+.dropdown-check-list {
+  display: inline-block;
+  padding-top: 30px;
+}
+
+.dropdown-check-list .anchor {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 50px 5px 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-size: 15px;
+}
+
+.dropdown-check-list .anchor:after {
+  position: absolute;
+  content: "";
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  padding: 5px;
+  right: 10px;
+  top: 20%;
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  
+}
+
+.dropdown-check-list .anchor:active:after {
+  right: 8px;
+  top: 21%;
+  
+}
+
+.dropdown-check-list ul.items {
+  padding: 2px;
+  display: none;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: white;
+  font-size: 15px;
+  position: relative;
+  z-index: 100;
+}
+
+.dropdown-check-list ul.items li {
+  list-style: none;
+}
+
+.dropdown-check-list.visible .anchor {
+  color: blue;
+}
+
+.dropdown-check-list.visible .items {
+  display: block;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /*grid-auto-rows: minmax(50px, auto);*/
+  height: 80px;
+  background-color: lightblue;
+  max-width: 100%;
+  margin: auto;
+  /*align-items: center;*/
+}
+
+
+#hd-left {
+  align-items: center;
+}
+.logo {
+  width: 50px;
+  padding-left: 10px;
+  padding-top: 30px;
+}
+
+#hd-middle {
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+#hd-right {
+  align-items: center;
+}
+
+#no-action, #buy, #sell, #cancel, #bought, #sold {
+  text-align: center;
+}
+
+#trading-instruction-text {
+  text-align: center;
+}
+
+.grid-container, .past-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr 2fr;
+  grid-template-rows: minmax(10px, auto);
+  gap: 1px;
+  max-width: 960px;
+  margin: auto;
+  background-color: black;
+  border: 2px solid black;
+  margin-bottom: 5px;
+}
+
+.blank-3-last {
+  grid-column: 3 / -1;
+}
+.blank-4-last {
+  grid-column: 4 / -1;
+}
+.grid-container p, .past-grid p {
+  font-size: 15px;
+  padding: 2px;
+  margin: 0px;
+}
+
+.grid-container p {
+  background-color: rgb(196, 239, 253);
+  font-weight: bold;
+}
+.past-grid p {
+  background-color: rgb(204, 202, 202);
+  color: rgb(49, 49, 49);
+}
+
+
