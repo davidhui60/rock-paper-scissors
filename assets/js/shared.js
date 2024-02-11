@@ -6,7 +6,7 @@ passwords += "family,PlaHui68@,HuiPla68#,Minx Hui\n"
 passwords += "family,PlaHui68@,HuiPla68#,Anthony Hui\n"
 passwords += "family,hui,password,temp password\n"
 passwords += "trading,david,kph#0417Plac,David Hui\n"
-passwords += "trading,stevet,Steve@111,Steve Toto\n"
+passwords += "trading,steve,Steve@111,Steve Toto\n"
 passwords += "trading,greg,Greg@111,Greg\n"
 //add password
 
