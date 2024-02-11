@@ -5,10 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trading</title>
-  <link rel="stylesheet" href="../../assets/css/trading.css">
+  <link rel="stylesheet" href="styles/trading.css">
   <script src="../../assets/js/shared.js"></script>
+  <script src="scripts/trading.js"></script>
   <script>
     check_password('trading','../index.html');
+    /*
     function filter_action(myType,myCheck) {
       let checkBox = document.getElementById(myCheck);
       let myClasses = document.querySelectorAll(myType),
@@ -24,6 +26,7 @@
         }
       }
     }
+  */
   </script>
 </head>
 <body>
@@ -32,35 +35,54 @@
     <div id="hd-left">
       <img class="logo" src="../images/MFSP logo.png">
     </div>
-    <div id="hd-middle">Trading</div>
+    <div id="hd-middle"><p>Trading</p></div>
     <div id="hd-right">
-      <div class="btn-container">
-        <p>Filters</p>
-        <input type="checkbox" id="cbnt-na" onclick="filter_action('.no-action','cbnt-na')" checked="checked">
-        <label for="cbnt-na">No action</label>
-      </div>
-      <div class="btn-container">
-        <input type="checkbox" id="cbnt-buy" onclick=" filter_action('.buy','cbnt-buy')" checked="checked">
-        <label for="cbnt-buy">BUY</label>
-      </div>
-      <div class="btn-container">
-        <input type="checkbox" id="cbnt-sell" onclick=" filter_action('.sell','cbnt-sell')" checked="checked">
-        <label for="cbnt-sell">SELL</label>
-      </div>
-      <div class="btn-container">
-        <input type="checkbox" id="cbnt-cancel" onclick=" filter_action('.cancel','cbnt-cancel')" checked="checked">
-        <label for="cbnt-cancel">Cancel Order</label>
-      </div>
-      <div class="btn-container">
-        <input type="checkbox" id="cbnt-bought" onclick=" filter_action('.bought','cbnt-bought')" checked="checked">
-        <label for="cbnt-bought">BOUGHT</label>
-      </div>
-      <div class="btn-container">
-        <input type="checkbox" id="cbnt-sold" onclick=" filter_action('.sold','cbnt-sold')" checked="checked">
-        <label for="cbnt-sold">SOLD</label>
+
+      <div id="list1" class="dropdown-check-list" tabindex="100">
+        <span class="anchor">Trade Actions</span>
+        <ul class="items">
+          <li>
+            <input type="checkbox" id="cbnt-select" onclick="select_all()" checked="checked">
+            <label for="cbnt-select">(Select All)</label>
+          </li>
+          <li>
+            <input type="checkbox" id="cbnt-na" onclick="filter_action('.no-action','cbnt-na')" checked="checked">
+            <label for="cbnt-na">No action</label>
+          </li>
+          <li>
+            <input type="checkbox" id="cbnt-buy" onclick=" filter_action('.buy','cbnt-buy')" checked="checked">
+            <label for="cbnt-buy">BUY</label> 
+          </li>
+          <li>
+            <input type="checkbox" id="cbnt-sell" onclick=" filter_action('.sell','cbnt-sell')" checked="checked">
+            <label for="cbnt-buy">SELL</label>  
+          </li>
+          <li>
+            <input type="checkbox" id="cbnt-cancel" onclick=" filter_action('.cancel','cbnt-cancel')" checked="checked">
+            <label for="cbnt-cancel">Cancel Order</label>
+          </li>
+          <li>
+            <input type="checkbox" id="cbnt-bought" onclick=" filter_action('.bought','cbnt-bought')" checked="checked">
+            <label for="cbnt-bought">BOUGHT</label> 
+          </li>
+          <li>
+            <input type="checkbox" id="cbnt-sold" onclick=" filter_action('.sold','cbnt-sold')" checked="checked">
+            <label for="cbnt-sold">SOLD</label>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
+  <script>
+    let checkList = document.getElementById('list1');
+    checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
+      if (checkList.classList.contains('visible'))
+        checkList.classList.remove('visible');
+      else
+        checkList.classList.add('visible');
+    }
+  </script>
+  
   <h2 id="trading-instruction-text">Daily Trading Instructions</h2>
 
   <div class="no-action">
