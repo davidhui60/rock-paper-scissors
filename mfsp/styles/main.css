@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
+@import url("fontawesome-all.min.css");
+
+
+body {
+  margin: 0;
+  background-image: url("../images/mfsp-bg.jpg");
+  background-size: cover;
+  /* background-color: lightgray; */
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
+  padding: 0;
+  font-size: 13pt;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: black;
+}
+
+.mission-text {
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: rgba(252, 248, 248, 0.8);
+  color: black;
+  margin-bottom: -20px;
+  margin-block-start: 60px;
+  
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.6);
+  margin-bottom: 10px;
+  margin-block-start: 60px;
+}
+
+.warning-text {
+  font-size: 1.1em;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+.link-text {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  width: 300px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+
+.mfsp-img {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 20px;
+}
+
+.mfsp-img img {
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .mission-text {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .mfsp-img {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .mission-text {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .mfsp-img {
+    margin-left: 5%;
+    margin-right: 5%;
+  }  
+}
+
