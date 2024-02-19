@@ -54,9 +54,11 @@
 }
 
 #gallery-button {
-  border: none;
-  background-color: beige;
-  color: black;
-  font-weight: bold;
-  border-radius: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2);
+  font-weight: 550;
+  background-image: linear-gradient(to bottom, #fff, transparent);
+  background-color: rgb(164, 164, 245);
+  color: blue;
+  border: 1px solid lightblue;
 }
