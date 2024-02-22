@@ -10,6 +10,7 @@ passwords += "family,hui,password,temp password\n"
 passwords += "trading,david,kph#0417Plac,David Hui\n"
 passwords += "trading,steve,Steve@111,Steve Toto\n"
 passwords += "trading,greg,Greg@111,Greg\n"
+passwords += "trading,ethos,SGEthos@111,Ethos Capital Advisor\n"
 //add password
 
 //gallery,user,code
