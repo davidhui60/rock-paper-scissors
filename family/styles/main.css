@@ -44,7 +44,8 @@ body {
 
 @media screen and (max-width: 800px) {
   .family-mission-text,
-  .event-text {
+  .event-text,
+  .chinese-names-text {
     margin-left: 15%;
     margin-right: 15%;
   }
