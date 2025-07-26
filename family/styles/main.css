@@ -14,26 +14,25 @@ body {
 }
 
 
-/* .container {
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  color: black;
-} */
-
 .family-mission-text {
+  margin-block-start: 120px;
+}
+
+.event-text {
+  margin: auto;
+  font-weight: bold;
   margin-block-start: 60px;
 }
 
-.event-text {
+.chinese-names-text {
+  margin: auto;
   font-weight: bold;
-  margin-block-start: 30px;
+  margin-block-start: 120px;
 }
 
 .family-mission-text,
-.event-text {
+.event-text,
+.chinese-names-text {
   color: black;
   margin-left: 30%;
   margin-right: 30%;
